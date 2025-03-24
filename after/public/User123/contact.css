@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  label {
+    font-size: 2rem;
+  }
+
+  .text-h2 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    color: #9b408f;
+  }
+
+  
+  .submit {
+    float: right;
+    background-color: #9b408f;
+    font-size: 2rem;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    cursor: pointer;
+    background-color: #870b76;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    position: sticky;
+    margin-top: 10%;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+
+  .row {
+    margin-top: 25px;
+  }
+
+  .row-img {
+    margin-top: 3rem;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
